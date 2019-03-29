@@ -1,0 +1,17 @@
+language: python
+python:
+  - "2.7"
+  - "3.7"
+
+os:
+  - linux
+  - osx
+sudo: required
+
+
+install:
+  - chmod +x install.sh
+  - chmod +x test.sh
+
+script:
+  - ./test.sh
